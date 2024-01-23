@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * selction_sort - sorts an array of integers in ascending order using
+ * selection_sort - sorts an array of integers in ascending order using
  * the selction sort algorithm. prints the array after
  * each swap
  * @array: array of integers
@@ -18,7 +18,7 @@ void selection_sort(int *array, size_t size)
 	for (i = 0; i < size - 1; i++)
 	{
 		first = array + i;
-		for (j = i+1; j < size; j++)
+		for (j = i + 1; j < size; j++)
 			first = (array[j] < *first) ? (array + j) : first;
 
 		if ((array + i) != first)
