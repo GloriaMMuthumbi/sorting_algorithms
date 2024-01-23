@@ -1,5 +1,5 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef SORT_H
+#define SORT_H
 
 #include <stddef.h>
 #include <stdlib.h>
@@ -13,9 +13,9 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /**
