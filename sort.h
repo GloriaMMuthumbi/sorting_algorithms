@@ -19,8 +19,12 @@ typedef struct listint_s
 } listint_t;
 
 /**
- * enum bool = Enumeration of boolean values
+ * enum bool - Enumeration of boolean values
+ *
+ * @false: represents value false representing 0
+ * @true: represents value true representing 1
  */
+
 typedef enum bool
 {
 	false = 0,
@@ -33,6 +37,6 @@ void print_list(const listint_t *list);
 void print_array(const int *array, size_t size);
 void swap_elems(int *elem1, int *elem2);
 void bubble_sort(int *array, size_t size);
-
+void insertion_sort_list(listint_t **list);
 
 #endif
